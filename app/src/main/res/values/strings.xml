@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MapTools</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_routes">Drawing Routes</string>
+    <string name="title_activity_distance">Distance</string>
+    <string name="title_activity_circle">Drawing Circle</string>
+    <string name="title_activity_drawing_triangle">Drawing Triangle</string>
+    <string name="title_activity_drawing_line">Drawing Line</string>
+
+    <!--/// j  سبب تكرار هذه هنا بسبب طباعة   resource/google_map_key not found when relase apk !!-->
+    <string name="google_maps_key">AIzaSyASmV6YL6QPtwvp2xcvqsTTuUl3GrwXVHQ</string>
+
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="abdallahandroid.maptools">
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
+    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_black"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMap">
+        <activity android:name=".HomePage.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".testMap.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+
+        <activity
+            android:name=".DirectionActivity"
+            android:icon="@drawable/routes"
+            android:label="@string/title_activity_routes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".DistanceActivity"
+            android:icon="@drawable/ruler"
+            android:label="@string/title_activity_distance"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".DrawingLineActivity"
+            android:label="@string/title_activity_drawing_line"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".DrawingCircle"
+            android:label="@string/title_activity_circle"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".DrawingTriangle"
+            android:icon="@drawable/logo"
+            android:label="@string/title_activity_drawing_triangle"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+
+    </application>
+
+</manifest>
